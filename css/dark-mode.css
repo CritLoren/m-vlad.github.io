@@ -1,7 +1,6 @@
 :root {
     --blu: white;
     --drk-blu: #111111;
-    --red: #CE2828;
     --gry: #E6EAED;
     --drk-gry: white;
     --lgt-gry: #1c1c1c;
@@ -18,6 +17,10 @@
 	background: var(--white);
 }
 
+.cta {
+    background: var(--lgt-gry);
+}
+
 .box-list li {
 	background: var(--lgt-gry);
 	border-color: var(--drty);
@@ -31,4 +34,12 @@
 .section-blue .dl-btn:hover {
     color: var(--drk-blu);
     background-color: var(--black);
+}
+
+footer {
+    background: var(--drk-blu);
+}
+
+.copy {
+    color: #657178;
 }

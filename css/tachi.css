@@ -5,7 +5,7 @@
     --drk-blu: #435E7E;
     --red: #CE2828;
     --gry: #657178;
-    --drk-gry: #333333;
+    --drk-gry: #111111;
     --lgt-gry: #E6EAED;
     --drty: #FAFBFB;
     --white: white;
@@ -117,7 +117,7 @@ nav ul li:last-child {
 
 /*----------------------Section------------------------*/
 
-section {
+section, footer {
     width: 100%;
     padding: 10vh;
     display: flex;
@@ -163,21 +163,22 @@ section {
 
 /*--------------------Navigation----------------------*/
 
-.nav-logo {
+.logo {
     display: flex;
     align-items: center;
     color: var(--black);
-    font-size: 25px;
+    font-size: 24px;
     transition: all 0.2s;
     margin-left: 12px;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.nav-logo:hover {
+.logo:hover {
     color: var(--drk-gry);
 }
 
-.nav-logo img {
-    height:40px;
+.logo img {
+    height: 40px;
     margin-right:2px;
 }
 
@@ -302,6 +303,64 @@ nav .dl-btn {
     color: var(--blu);
 }
 
+footer {
+    height: 40px;
+    background: var(--drk-gry);
+    padding: 30px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.copy {
+    display: flex;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.copy i {
+    font-size: 12px;
+}
+
+.copy a:hover {
+    color: white;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    padding: 4px;
+    border-radius: 40px;
+    background: #333333;
+    margin-left: 15px;
+    display: flex;
+    filter: grayscale(100%);
+}
+
+.social a:hover {
+    background: #E6EAED;
+    filter: none;
+}
+
+.social a img {
+    height: 30px;
+}
+
+footer .logo {
+    color: white;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+footer .logo img {
+    height: 28px;
+}
+
 /*---------------------Blue Overwrite---------------------*/
 
 .preview-ani {
@@ -337,7 +396,7 @@ nav .dl-btn {
     background-color: var(--white);
 }
 
-/*----------------------Animations------------------------*/
+/*-------------------------CTA---------------------------*/
 
 .cta {
     color: var(--white);
@@ -463,6 +522,23 @@ nav .dl-btn {
 
     }
 
+    footer {
+        height: 65px;
+    }
+
+    footer .logo, .social {
+        margin-top: -30px;
+    }
+
+    .copy {
+        position: absolute;
+        bottom: 25px;
+        bottom: 25px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (max-width: 70vh) {
@@ -496,6 +572,10 @@ nav .dl-btn {
 
     h1 {
         margin-top: 24px;
+    }
+
+    .copy {
+        width: 80%;
     }
 
 }
