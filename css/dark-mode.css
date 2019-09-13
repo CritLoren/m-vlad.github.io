@@ -1,0 +1,34 @@
+:root {
+    --blu: white;
+    --drk-blu: #111111;
+    --red: #CE2828;
+    --gry: #E6EAED;
+    --drk-gry: white;
+    --lgt-gry: #1c1c1c;
+    --drty: #333333;
+    --white: black;
+    --black: white;
+}
+
+.section-blue h1, .section-blue p {
+    color: var(--black);
+}
+
+#quickfaq {
+	background: var(--white);
+}
+
+.box-list li {
+	background: var(--lgt-gry);
+	border-color: var(--drty);
+}
+
+.section-blue .dl-btn {
+    border-color: var(--blu);
+    color: var(--blu);
+}
+
+.section-blue .dl-btn:hover {
+    color: var(--drk-blu);
+    background-color: var(--black);
+}
